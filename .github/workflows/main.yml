@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "azure-vote/**"
+      - "azure-vote-all-in-one-redis.yaml"
 jobs:
   build:
     runs-on: ubuntu-latest
