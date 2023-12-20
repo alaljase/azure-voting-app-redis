@@ -20,6 +20,11 @@ spec:
         env:
         - name: ALLOW_EMPTY_PASSWORD
           value: "yes"
+        resources:
+          requests:
+            cpu: 280m
+          limits:
+            cpu: 540m
         ports:
         - containerPort: 6379
           name: redis
@@ -63,9 +68,9 @@ spec:
         - containerPort: 80
         resources:
           requests:
-            cpu: 280m
+            cpu: 289m
           limits:
-            cpu: 540m
+            cpu: 549m
         env:
         - name: REDIS
           value: "azure-vote-back"
