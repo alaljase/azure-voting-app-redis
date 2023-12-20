@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: azure-vote-back
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: azure-vote-back
@@ -39,7 +39,7 @@ kind: Deployment
 metadata:
   name: azure-vote-front
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: azure-vote-front
@@ -63,9 +63,9 @@ spec:
         - containerPort: 80
         resources:
           requests:
-            cpu: 260m
+            cpu: 280m
           limits:
-            cpu: 520m
+            cpu: 540m
         env:
         - name: REDIS
           value: "azure-vote-back"
