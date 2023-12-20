@@ -22,9 +22,9 @@ spec:
           value: "yes"
         resources:
           requests:
-            cpu: 280m
+            cpu: 282m
           limits:
-            cpu: 540m
+            cpu: 542m
         ports:
         - containerPort: 6379
           name: redis
@@ -68,9 +68,9 @@ spec:
         - containerPort: 80
         resources:
           requests:
-            cpu: 289m
+            cpu: 282m
           limits:
-            cpu: 549m
+            cpu: 542m
         env:
         - name: REDIS
           value: "azure-vote-back"
