@@ -22,7 +22,7 @@ spec:
           value: "yes"
         resources:
           requests:
-            cpu: 600m
+            cpu: 100m
           limits:
             cpu: 700m
         ports:
@@ -68,7 +68,7 @@ spec:
         - containerPort: 80
         resources:
           requests:
-            cpu: 600m
+            cpu: 100m
           limits:
             cpu: 700m
         env:
